@@ -1125,6 +1125,7 @@
         <option name="FOREGROUND" value="{{mauve}}"/>
       </value>
     </option>
+    <option name="GO_COMMENT_REFERENCE" baseAttributes="DEFAULT_LINE_COMMENT"/>
     <option name="GO_EXPORTED_FUNCTION_CALL" baseAttributes="DEFAULT_FUNCTION_CALL"/>
     <option name="GO_LOCAL_FUNCTION_CALL" baseAttributes="DEFAULT_FUNCTION_CALL"/>
     <option name="GO_METHOD_RECEIVER" baseAttributes="DEFAULT_LOCAL_VARIABLE"/>
@@ -1170,6 +1171,9 @@
         <option name="EFFECT_COLOR" value="{{subtext1}}"/>
         <option name="EFFECT_TYPE" value="1"/>
       </value>
+    </option>
+    <option name="GO_TEMPLATE_BACKGROUND">
+      <value />
     </option>
     <option name="GO_STRUCT_EXPORTED_MEMBER">
       <value>
@@ -1881,6 +1885,17 @@
     <option name="NG.TEMPLATE_BINDINGS_ATTR_NAME">
       <value>
         <option name="FOREGROUND" value="{{peach}}"/>
+      </value>
+    </option>
+    <option name="NIX_BUILTIN">
+      <value>
+        <option name="FOREGROUND" value="{{red}}" />
+        <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="NIX_IDENTIFIER">
+      <value>
+        <option name="FOREGROUND" value="{{blue}}" />
       </value>
     </option>
     <option name="NOT_TOP_FRAME_ATTRIBUTES">
