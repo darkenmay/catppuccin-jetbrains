@@ -344,6 +344,12 @@ Object.entries(variants).forEach(([key, value]) => {
           inactiveBackground: "secondaryBackground",
         },
       },
+      SegmentedButton: {
+        focusedSelectedButtonColor: "secondaryBackground",
+        selectedButtonColor: "secondaryBackground",
+        selectedEndBorderColor: "secondaryBackground",
+        selectedStartBorderColor: "secondaryBackground",
+      },
       ScrollBar: {
         Mac: {
           hoverThumbColor: opacity(value.overlay0.hex, 0.4),

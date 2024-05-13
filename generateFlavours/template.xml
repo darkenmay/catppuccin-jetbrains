@@ -1,6 +1,16 @@
 <scheme name="{{name}}" version="142" parent_scheme="{{parent_scheme}}">
   <colors>
     <option name="ADDED_LINES_COLOR" value="{{green}}"/>
+    <option name="BLOCK_TERMINAL_BLOCK_BACKGROUND_END" value="{{mantle}}" />
+    <option name="BLOCK_TERMINAL_BLOCK_BACKGROUND_START" value="{{mantle}}" />
+    <option name="BLOCK_TERMINAL_DEFAULT_BACKGROUND" value="{{base}}" />
+    <option name="BLOCK_TERMINAL_DEFAULT_FOREGROUND" value="{{text}}" />
+    <option name="BLOCK_TERMINAL_ERROR_BLOCK_STROKE_COLOR" value="{{red}}" />
+    <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_BACKGROUND" value="{{surface1}}" />
+    <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_STROKE_COLOR" value="{{overlay0}}" />
+    <option name="BLOCK_TERMINAL_PROMPT_SEPARATOR_COLOR" value="{{surface1}}" />
+    <option name="BLOCK_TERMINAL_SELECTED_BLOCK_BACKGROUND" value="{{surface0}}" />
+    <option name="BLOCK_TERMINAL_SELECTED_BLOCK_STROKE_COLOR" value="{{blue}}" />
     <option name="ANNOTATIONS_COLOR" value="{{text}}"/>
     <option name="CARET_COLOR" value="{{rosewater}}"/>
     <option name="CARET_ROW_COLOR" value="{{isLatte (opacity surface1 0.15) (opacity surface1 0.2)}}"/>
@@ -147,6 +157,122 @@
     <option name="BASH.HERE_DOC_END" baseAttributes="DEFAULT_KEYWORD"/>
     <option name="BASH.HERE_DOC_START" baseAttributes="DEFAULT_KEYWORD"/>
     <option name="BASH.SHEBANG" baseAttributes="BASH.LINE_COMMENT"/>
+    <option name="TERMINAL_BACKGROUND" value="{{base}}"/>
+    <option name="BLOCK_TERMINAL_COMMAND">
+      <value>
+        <option name="FOREGROUND" value="{{blue}}" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_CURRENT_SEARCH_ENTRY">
+      <value>
+        <option name="FOREGROUND" value="{{text}}" />
+        <option name="BACKGROUND" value="{{opacity red 0.3}}" />
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_SEARCH_ENTRY">
+      <value>
+        <option name="FOREGROUND" value="{{text}}" />
+        <option name="BACKGROUND" value="{{opacity blue 0.3}}" />
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_BLACK" >
+      <value>
+        <option name="FOREGROUND" value="{{isLatte subtext1 surface1}}"/>
+        <option name="BACKGROUND" value="{{isLatte subtext1 surface1}}"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_BLUE" >
+      <value>
+        <option name="FOREGROUND" value="{{blue}}"/>
+        <option name="BACKGROUND" value="{{blue}}"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_CYAN" >
+      <value>
+        <option name="FOREGROUND" value="{{teal}}"/>
+        <option name="BACKGROUND" value="{{teal}}"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_GREEN" >
+      <value>
+        <option name="FOREGROUND" value="{{green}}"/>
+        <option name="BACKGROUND" value="{{green}}"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_MAGENTA">
+      <value>
+        <option name="FOREGROUND" value="{{pink}}"/>
+        <option name="BACKGROUND" value="{{pink}}"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_RED"  >
+      <value>
+        <option name="FOREGROUND" value="{{red}}"/>
+        <option name="BACKGROUND" value="{{red}}"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_WHITE" >
+      <value>
+        <option name="FOREGROUND" value="{{isLatte surface2 subtext1}}"/>
+        <option name="BACKGROUND" value="{{isLatte surface2 subtext1}}"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_YELLOW" >
+      <value>
+        <option name="FOREGROUND" value="{{yellow}}"/>
+        <option name="BACKGROUND" value="{{yellow}}"/>
+      </value>
+    </option>
+
+    <option name="BLOCK_TERMINAL_BLACK_BRIGHT" >
+      <value>
+        <option name="FOREGROUND" value="{{isLatte subtext0 surface2}}"/>
+        <option name="BACKGROUND" value="{{isLatte subtext0 surface2}}"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_BLUE_BRIGHT" >
+      <value>
+        <option name="FOREGROUND" value="{{blue}}"/>
+        <option name="BACKGROUND" value="{{blue}}"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_CYAN_BRIGHT" >
+      <value>
+        <option name="FOREGROUND" value="{{teal}}"/>
+        <option name="BACKGROUND" value="{{teal}}"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_GREEN_BRIGHT" >
+      <value>
+        <option name="FOREGROUND" value="{{green}}"/>
+        <option name="BACKGROUND" value="{{green}}"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_MAGENTA_BRIGHT" >
+      <value>
+        <option name="FOREGROUND" value="{{pink}}"/>
+        <option name="BACKGROUND" value="{{pink}}"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_RED_BRIGHT">
+      <value>
+        <option name="FOREGROUND" value="{{red}}"/>
+        <option name="BACKGROUND" value="{{red}}"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_WHITE_BRIGHT">
+      <value>
+        <option name="FOREGROUND" value="{{isLatte surface1 subtext0}}"/>
+        <option name="BACKGROUND" value="{{isLatte surface1 subtext0}}"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_YELLOW_BRIGHT" >
+      <value>
+        <option name="FOREGROUND" value="{{yellow}}"/>
+        <option name="BACKGROUND" value="{{yellow}}"/>
+      </value>
+    </option>
     <option name="BLADE_DIRECTIVE">
       <value>
         <option name="FOREGROUND" value="{{mauve}}"/>
@@ -2515,7 +2641,7 @@
     <option name="SASS_VARIABLE" baseAttributes="DEFAULT_INSTANCE_FIELD"/>
     <option name="SEARCH_RESULT_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="{{base}}"/>
+        <option name="BACKGROUND" value="{{opacity blue 0.3}}"/>
       </value>
     </option>
     <option name="SLIM_BAD_CHARACTER">
@@ -2919,6 +3045,61 @@
         <option name="FOREGROUND" value="{{maroon}}"/>
       </value>
     </option>
+    <option name="org.rust.ATTRIBUTE">
+      <value>
+        <option name="FOREGROUND" value="{{rosewater}}"/>
+      </value>
+    </option>
+    <option name="org.rust.CONSTANT">
+      <value>
+        <option name="FOREGROUND" value="{{lavender}}"/>
+      </value>
+    </option>
+    <option name="org.rust.CONST_PARAMETER">
+      <value>
+        <option name="FOREGROUND" value="{{text}}"/>
+      </value>
+    </option>
+    <option name="org.rust.CRATE">
+      <value>
+        <option name="FOREGROUND" value="{{pink}}"/>
+      </value>
+    </option>
+    <option name="org.rust.ENUM_VARIANT">
+      <value>
+        <option name="FOREGROUND" value="{{lavender}}"/>
+      </value>
+    </option>
+    <option name="org.rust.FORMAT_PARAMETER">
+      <value>
+        <option name="FOREGROUND" value="{{flamingo}}"/>
+      </value>
+    </option>
+    <option name="org.rust.GENERATED_ITEM">
+      <value>
+        <option name="FOREGROUND" value="{{flamingo}}"/>
+      </value>
+    </option>
+    <option name="org.rust.MODULE">
+      <value>
+        <option name="FOREGROUND" value="{{pink}}"/>
+      </value>
+    </option>
+    <option name="org.rust.STATIC">
+      <value>
+        <option name="FOREGROUND" value="{{lavender}}"/>
+      </value>
+    </option>
+    <option name="org.rust.PRIMITIVE_TYPE">
+      <value>
+        <option name="FOREGROUND" value="{{yellow}}" />
+      </value>
+    </option>
+    <option name="org.rust.NUMBER">
+      <value>
+        <option name="FOREGROUND" value="{{maroon}}" />
+      </value>
+    </option>
     <option name="org.rust.CFG_DISABLED_CODE">
       <value>
         <option name="FOREGROUND" value="{{subtext0}}"/>
@@ -2932,7 +3113,7 @@
     <option name="org.rust.FUNCTION_CALL" baseAttributes="DEFAULT_FUNCTION_CALL"/>
     <option name="org.rust.LIFETIME">
       <value>
-        <option name="FOREGROUND" value="{{blue}}"/>
+        <option name="FOREGROUND" value="{{lavender}}"/>
         {{#if italics}}
         <option name="FONT_TYPE" value="2"/>
         {{/if}}
@@ -2940,7 +3121,7 @@
     </option>
     <option name="org.rust.MACRO">
       <value>
-        <option name="FOREGROUND" value="{{sky}}"/>
+        <option name="FOREGROUND" value="{{blue}}"/>
       </value>
     </option>
     <option name="org.rust.METHOD_CALL" baseAttributes="DEFAULT_FUNCTION_CALL"/>
