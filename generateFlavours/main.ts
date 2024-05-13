@@ -114,6 +114,7 @@ Object.entries(variants).forEach(([key, value]) => {
       "*": {
         arc: "7",
         background: "primaryBackground",
+        foreground: "primaryForeground",
         selectionForeground: "primaryForeground",
         selectionInactiveForeground: "primaryForeground",
         selectionBackground: "selectionBackground",
@@ -127,6 +128,7 @@ Object.entries(variants).forEach(([key, value]) => {
         background: "mantle",
         selectionBackground: "selectionBackground",
         selectionInactiveBackground: "selectionInactiveBackground",
+        foreground: "primaryForeground",
         selectionForeground: "primaryForeground",
         selectionInactiveForeground: "primaryForeground",
         hoverBackground: "hoverBackground",
@@ -210,9 +212,11 @@ Object.entries(variants).forEach(([key, value]) => {
         inactiveErrorFocusColor: "red",
         warningFocusColor: "yellow",
         inactiveWarningFocusColor: "yellow",
+        iconColor: "primaryForeground",
       },
       RunWidget: {
         separatorColor: "separatorColor",
+        iconColor: "primaryForeground",
         foreground: "text",
         background: "secondaryBackground"
       },
@@ -250,6 +254,10 @@ Object.entries(variants).forEach(([key, value]) => {
         Violet: isLatte
           ? opacity(value.lavender.hex, 0.2)
           : opacity(value.lavender.hex, 0.15),
+      },
+      Label: {
+        background: "panelBackground",
+        selectedForeground: "selectionBackground",
       },
       Link: {
         activeForeground: "accentColor",
@@ -418,6 +426,7 @@ Object.entries(variants).forEach(([key, value]) => {
         Button: {
           hoverBackground: "hoverBackground",
           selectedBackground: "hoverBackground",
+          selectedForeground: "primaryForeground",
         },
         Header: {
           background: "primaryBackground",
@@ -436,6 +445,7 @@ Object.entries(variants).forEach(([key, value]) => {
       Tree: {
         rowHeight: 24,
         background: "mantle",
+        foreground: "primaryForeground",
         modifiedItemForeground: "accentColor",
         hoverBackground: "hoverBackground",
         hoverInactiveBackground: "hoverBackground",
@@ -508,7 +518,6 @@ Object.entries(variants).forEach(([key, value]) => {
         "Objects.Yellow": colors.yellow,
         "Objects.YellowDark": colors.flamingo,
         "Objects.BlackText": colors.surface0,
-        "Tree.iconColor": colors.blue,
         "Checkbox.Background.Default": colors.surface0,
         "Checkbox.Background.Selected": colors.surface0,
         "Checkbox.Background.Disabled": colors.surface0,
@@ -517,6 +526,7 @@ Object.entries(variants).forEach(([key, value]) => {
         "Checkbox.Border.Default": colors.surface0,
         "Checkbox.Border.Selected": colors.surface0,
         "Checkbox.Border.Disabled": colors.surface0,
+        "Tree.iconColor": colors.blue
       },
     },
   };
