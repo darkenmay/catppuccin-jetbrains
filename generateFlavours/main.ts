@@ -328,6 +328,7 @@ Object.entries(variants).forEach(([key, value]) => {
         hoverBackground: "hoverBackground",
         lightSelectionBackground: "hoverBackground",
         tagBackground: "secondaryBackground",
+        tagForeground: "overlay2",
         Button: {
           installBorderColor: "accentColor",
           installForeground: "surface0",
