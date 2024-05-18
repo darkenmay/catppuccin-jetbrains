@@ -188,6 +188,7 @@ Object.entries(variants).forEach(([key, value]) => {
         background: "accentColor",
       },
       ComboBox: {
+        disabledForeground: "surface2",
         modifiedItemForeground: "accentColor",
         ArrowButton: {
           background: "secondaryBackground",
@@ -201,7 +202,10 @@ Object.entries(variants).forEach(([key, value]) => {
       CompletionPopup: {
         selectionBackground: "selectionBackground",
         selectionInactiveBackground: "selectionBackground",
-        matchForeground: "flamingo",
+        matchForeground: "pink",
+        Advertiser: {
+          foreground: "overlay2"
+        }
       },
       Component: {
         focusColor: "accentColor",
@@ -213,6 +217,7 @@ Object.entries(variants).forEach(([key, value]) => {
         warningFocusColor: "yellow",
         inactiveWarningFocusColor: "yellow",
         iconColor: "primaryForeground",
+        infoForeground: "surface2"
       },
       RunWidget: {
         separatorColor: "separatorColor",
@@ -257,7 +262,11 @@ Object.entries(variants).forEach(([key, value]) => {
       },
       Label: {
         background: "panelBackground",
+        foreground: "subtext0",
+        infoForeground: "overlay0",
         selectedForeground: "selectionBackground",
+        disabledForeground: "surface2",
+        disabledText: "surface2"
       },
       Link: {
         activeForeground: "accentColor",
@@ -315,6 +324,7 @@ Object.entries(variants).forEach(([key, value]) => {
         SectionHeader: {
           foreground: "primaryForeground",
         },
+        disabledForeground: "surface2",
         hoverBackground: "hoverBackground",
         lightSelectionBackground: "hoverBackground",
         tagBackground: "secondaryBackground",
@@ -406,6 +416,7 @@ Object.entries(variants).forEach(([key, value]) => {
       },
       TextField: {
         background: "secondaryBackground",
+        inactiveForeground: "surface2",
       },
       TextArea: {
         background: "mantle",
